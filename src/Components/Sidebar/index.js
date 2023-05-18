@@ -51,9 +51,9 @@ function Sidebar() {
                 <AiOutlineSetting className="Nav-item__icon"/>
               </li>
             </CostumLink>   
-            <CostumLink className='Nav-l'>
+            <CostumLink className='Nav-link' to={'/exit'}>
               <li className="Nav-item">
-                <IoExitOutline/>
+                <IoExitOutline className="Nav-item__icon"/>
               </li>
             </CostumLink>
           </ul>
