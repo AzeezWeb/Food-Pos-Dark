@@ -1,0 +1,203 @@
+.Order-Container {
+  width: 416px;
+  height: 100vh;
+  position: relative;
+}
+
+.Orders {
+  width: 416px;
+  height: 100vh;
+  background-color: #1F1D2B;
+  position: fixed;
+  border-top-right-radius: 16px;;
+  border-bottom-right-radius: 16px;
+  color: #fff;
+  padding:10px 24px 24px 24px;
+  overflow: scroll;
+
+}
+
+.Order-title {
+  font-size: 20px;
+  line-height: 28px;
+  margin-bottom: 24px;
+}
+
+.Order-btn {
+  color: #EA7C69;
+  font-size: 16px;
+  line-height: 20px;
+  padding: 7px 12px;
+  margin-right: 8px;
+  margin-bottom: 15px;
+  background-color: #1F1D2B;
+  border:1px solid #393C49;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+.Order-btn.active {
+  color: #fff;
+  background-color: #EA7C69;
+
+}
+
+.Row.br {
+  display: flex;
+  flex-direction: row;
+  border-bottom: 1px solid #393C49;
+  padding-bottom: 7px;
+  margin-bottom: 7px;
+}
+
+.Sub-title {
+  width: 68%;
+
+}
+
+.Sub-title2 {
+  width: 15%;
+}
+
+
+.Sub-title, .Sub-title2, .Sub-title3 {
+  font-size: 16px;
+  line-height: 22px;
+}
+
+.Row.Order {
+  display: flex;
+  flex-direction: row;
+  justify-content:space-between;
+  align-items: center;
+}
+
+.Food-info {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+}
+
+.Food-info img {
+  width: 45px;
+  height: 41px;
+  border-radius: 50%;
+  margin-right: 8px;
+  margin-top: 15px;
+}
+
+.Food-info .Food-title {
+  color: #fff;
+  width: 150px;
+  height: 18px;
+  /* font-size: 14px; */
+  font-weight: 500;
+  line-height: 19px;
+  letter-spacing: 0.5px;
+  overflow: hidden;
+  margin-right: 25px;
+  margin-bottom: 5px;
+}
+
+.Food-info .Food-price{
+  color: #fff;
+}
+
+.Order-Number {
+  padding: 13px 19px;
+  border-radius: 10px;
+  border: 1px solid #393C49;
+}
+
+.All-price {
+  padding: 12px 19px 12px 0;
+}
+
+.Row.Input {
+  display: flex;
+  align-items: center;
+} 
+.Order-note {
+  width: 293px;
+  height: 48px;
+  color: #E0E6E9;
+  padding: 14px 88px 14px 14px;
+  margin-top: 13px;
+  border: #393C49;
+  outline: #393C49;
+  background-color: #2D303E;
+  border-radius: 10px;
+}
+
+
+.Order-delet-btn {
+  display: inline-block;
+  width: 48px;
+  height: 47px;
+  border: 1px solid #ff7ca3;
+  border-radius: 8px;
+  margin-top: 13px;
+  margin-left: 10px;
+  text-align: center;
+  vertical-align: middle;
+  padding-top: 12.5px;
+  cursor: pointer;
+}
+
+.Order-delet-btn * {
+  pointer-events: none;
+  width: 20px;
+  height: 20px;
+  color: #ff7ca3;
+}
+
+
+.Continue-payment {
+  width: 409px;
+  position: fixed;
+  bottom: 0;
+  color: #E0E6E9;
+  padding: 24px;
+  padding-bottom: 10px;
+  padding-top: 10px;
+  margin-top: 5px;
+  border-top: 1px solid #393C49;
+  z-index: 10;
+  background-color: #1F1D2B;
+
+}
+
+.Discount, .Sub-total {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-bottom: 10px;
+}
+
+
+
+.Discount p:first-child, .Sub-total p:first-child  {
+  color: #ABBBC2;
+}
+
+.Continue-btn {
+  width: 100%;
+  color: #e9dfdf;
+  font-size: 14px;
+  text-align: center;
+  line-height: 20px;
+  padding: 10px 0px;
+  background-color: #EA7C69;
+  cursor: pointer;
+  border-radius: 10px;
+  outline: none;
+  border: none;
+  transition: all 0.3s ease;
+}
+
+
+.Continue-btn:hover {
+  background-color: #ee6f59;
+}
+

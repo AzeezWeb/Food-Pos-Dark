@@ -1,0 +1,40 @@
+.Filter {
+  margin-top: 24px;
+  width: 100%;
+}
+
+.Filter-list {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding-bottom: 13px;
+  border-bottom: 1px solid #393C49;
+}
+
+
+
+
+.Filter-item {
+  color: #fff;
+  cursor: pointer;
+  position: relative;
+  font-size: 16px;
+  line-height: 20px;
+  letter-spacing: 1px;
+
+}
+
+.Filter-item.active{
+  color: #EA7C69;
+}
+
+ .Filter-item.active::after {
+  content: '';
+  width: 37px;
+  height: 3px;
+  position: absolute;
+  bottom: -16px;
+  left: 0%;
+  background-color: #EA7C69;
+  border-radius: 10px;
+}

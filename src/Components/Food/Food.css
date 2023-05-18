@@ -1,0 +1,74 @@
+.Foods {
+  display: block;
+  width: 100%;
+  margin-top: -10px;
+}
+.Food * {
+  pointer-events: none;
+}
+.Foods .Row {
+  display: flex;
+  flex-flow: row wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Food-sub__title {
+  color: #fff;
+  font-size: 22px;
+  line-height: 28px;
+}
+
+
+.Food-select {
+  height: 48px;
+  color: #fff;
+  font-size: 14px;
+  padding: 15px;
+  background-color: #1F1D2B; 
+  border: #393C49;
+  border-radius: 10px;
+  padding-right: 4px;
+  outline: none;
+}
+
+.Food {
+  width: 192px;
+  height: 226px;
+  color: #ffffffd1;
+  text-align: center;
+  background-color: #1F1D2B;
+  border-radius: 16px;
+  padding: 0 24px 0 24px;
+  margin-top: 66px;
+  cursor: pointer;
+}
+
+.Food-img {
+
+  width: 149px;
+  height: 136px;
+  border-radius: 100%;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: -50px;
+  margin-left: -3px;
+}
+
+.Food-img img {
+  object-fit: cover;
+}
+
+.Food-title {
+  font-size: 17px;
+  font-weight: 500;
+  line-height: 18px;
+  margin-top: 14px;
+  padding-bottom: 8px;
+}
+ 
+
+.Food-bowls {
+  color: #ABBBC2;
+  margin-top: 5px;
+}

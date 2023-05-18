@@ -1,0 +1,194 @@
+
+
+.Payment {
+  width: 100%;
+  height: 100%;
+  display: none;
+  position: absolute;
+  left: 0;
+  top: 0;
+  z-index: 1000000;
+  left: 0;
+  background-color: #675a5a84;
+}
+.Payment.active {
+  display: block;
+}
+.Payment-Container {
+  width: 418px;
+  height: 100vh;
+  color: #fff;
+  background-color: #1F1D2B;
+  padding: 14px 24px 24px 24px;
+  border-radius: 16px;
+  position: absolute;
+  right: 244px;
+  top: 0;
+  right: 0;
+  z-index: 10000000;
+  /* display: none; */
+}
+
+.Payment-Container h1 {
+  font-size: 28px;
+  line-height: 39px;
+  margin-bottom: 8px;
+}
+
+.Payment-Container p {
+  font-size: 16px;
+  line-height: 22px;
+  padding-bottom: 24px;
+  margin-bottom: 28px;
+  border-bottom: 1px solid #393C49;
+}
+
+.Payment-method h2  {
+    font-size: 20px;
+    line-height: 28px;
+    margin-bottom: 16px;
+}
+
+.Payment-btn {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin-bottom: 16px;
+
+}
+
+.Payment-btn div {
+  width: 101px;
+  height: 64px;
+  color: #AABAC1;
+  margin-right: 10px;
+  border: 1px solid #393C49;
+  padding: 10px;
+  background-color: transparent;
+  border-radius: 8px;
+  outline: none;
+  text-align: center;
+  position: relative;
+  cursor: pointer;
+
+
+}
+
+.Payment-btn div.active {
+  color: #fff;
+  border-color: #abbbc2c9;
+  background-color: #41434c6d;
+}
+
+
+.Payment-icon {
+  width: 30px;
+  height: 20px;
+}
+
+.Payment-btn div  .Payment-icon__check {
+  display: none;
+}
+.Payment-btn div.active .Payment-icon__check {
+  display: block;
+  position: absolute;
+  top: 6px;
+  right: 6px;
+  width: 16px;
+  height: 16px;
+  color: #EA7C69;
+}
+
+form.Payment-form {
+  width: 100%;
+}
+
+.Payment-form label span {
+  display: block;
+  font-size: 14px;
+  line-height: 20px;
+  font-weight: 600;  
+  margin-bottom: 8px;
+}
+
+.Payment-form input {
+  width: 100%;
+  padding: 14px;
+  color: #E0E6E9;
+  font-size: 15px;
+  line-height: 20px;
+  background-color: #2D303E;
+  border-color: #393C49;
+  border-radius: 8px;
+  outline: none;
+  margin-bottom: 16px;
+  border: none;
+}
+
+.Form-Row {
+  display: flex; 
+  flex-direction: row;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.Form-Row hr {
+  display: none;
+}
+
+.Form-Row label {
+  width: 48%;
+}
+
+.Card-data, .Payment-select, .Card-cvv{
+  width: 45%;
+  display: block;
+}
+.Payment-select-label {
+  margin-top: -14px;
+}
+.Payment-select {
+  width: 100%;
+  background-color: #2D303E;
+  color: #fff;
+  border: none;
+  font-size:15px;
+  padding: 15px;
+  padding-right: 0px;
+  border-radius: 8px;
+}
+
+
+.Payment-form__btn {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-top: 10px;
+
+}
+
+.Payment-form__btn button {
+  width: 48%;
+  padding: 14px;
+  text-align: center;
+  border-radius: 10px;
+  font-size: 14px;
+  line-height: 20px;
+  outline: none;
+  cursor: pointer;
+}
+
+.Payment-form__btn button.Form-btn__cancel {
+  color: #EA7C69;
+  border: 1px solid #EA7C69;
+  background-color: #2D303E;
+}
+
+.Payment-form__btn button.Form-btn__confirm {
+  color: #fff;
+  border: 1px solid #EA7C69;
+  background-color: #EA7C69;
+}

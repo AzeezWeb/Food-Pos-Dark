@@ -1,23 +1,31 @@
-import logo from './logo.svg';
 import './App.css';
+import { Route, Routes } from 'react-router-dom';
+import Sidebar from './Components/Sidebar';
+import Home from './Pages/Home';
+import Percent from './Pages/Percentages'
+import Dashboard from './Pages/Dashboard'
+import Messages from './Pages/Messages'
+import Notifications from './Pages/Notification'
+import Settings from './Pages/Settings'
+
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className="Container">
+      <div className='App'>
+        <Sidebar/>
+          <Routes>
+              <Route path='/' element={<Home/>} />
+              <Route path='/:item'  element={<Home/>} />
+              <Route path='/percent' element={<Percent/>} />
+              <Route path='/dashboard' element={<Dashboard/>} />
+              <Route path='/messages' element={<Messages/>} />
+              <Route path='/notification' element={<Notifications/>}/>
+              <Route path='/Setting' element={<Settings/>}/>
+          </Routes>
+      </div>
     </div>
   );
 }
